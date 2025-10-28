@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Igor | Portfolio</title>
+	<meta name="description" content="Portafolio de desarrollador: proyectos, habilidades y contacto." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/Css/styles.css" />
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#home" aria-label="Ir al inicio">
+				<svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 4h24v24H4z" fill="none"/><path d="M8 24V8h4v6h8V8h4v16h-4v-6h-8v6z" fill="currentColor"/></svg>
+				<span>Igor</span>
+			</a>
+			<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+				<span></span><span></span><span></span>
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Principal">
+				<ul>
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#about">Sobre mí</a></li>
+					<li><a href="#projects">Proyectos</a></li>
+					<li><a href="#skills">Habilidades</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="home">
+		<section class="hero container" aria-labelledby="hero-title">
+			<div class="hero-text">
+				<h1 id="hero-title">Hola, soy <span class="accent">Igor</span>.</h1>
+				<p class="lead">Desarrollador Frontend creando experiencias web rápidas, accesibles y elegantes.</p>
+				<div class="hero-cta">
+					<a class="btn primary" href="#projects">Ver proyectos</a>
+					<a class="btn ghost" href="#contact">Contactar</a>
+				</div>
+			</div>
+			<div class="hero-art" aria-hidden="true">
+				<div class="orb"></div>
+			</div>
+		</section>
+
+		<section id="about" class="section container" aria-labelledby="about-title">
+			<h2 id="about-title">Sobre mí</h2>
+			<p>Soy un desarrollador enfocado en el detalle, amante del rendimiento y la accesibilidad. Me gusta transformar ideas en productos usables con tecnologías modernas.</p>
+		</section>
+
+		<section id="projects" class="section container" aria-labelledby="projects-title">
+			<h2 id="projects-title">Proyectos</h2>
+			<div class="grid projects-grid">
+				<article class="card">
+					<h3>Sitio de Comercio</h3>
+					<p>SPA con carrito, filtros y pasarela de pago de prueba.</p>
+					<ul class="tags"><li>React</li><li>Vite</li><li>Stripe</li></ul>
+					<div class="card-actions">
+						<a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+						<a class="btn small ghost" href="#" target="_blank" rel="noopener">Código</a>
+					</div>
+				</article>
+				<article class="card">
+					<h3>Dashboard Analytics</h3>
+					<p>Gráficas interactivas y paneles personalizables.</p>
+					<ul class="tags"><li>Vue</li><li>D3</li><li>Tailwind</li></ul>
+					<div class="card-actions">
+						<a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+						<a class="btn small ghost" href="#" target="_blank" rel="noopener">Código</a>
+					</div>
+				</article>
+				<article class="card">
+					<h3>Portafolio 3D</h3>
+					<p>Experimentos 3D con Three.js y animaciones suaves.</p>
+					<ul class="tags"><li>Three.js</li><li>GSAP</li><li>Vite</li></ul>
+					<div class="card-actions">
+						<a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+						<a class="btn small ghost" href="#" target="_blank" rel="noopener">Código</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="skills" class="section container" aria-labelledby="skills-title">
+			<h2 id="skills-title">Habilidades</h2>
+			<ul class="skills-list">
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+				<li>TypeScript</li>
+				<li>React</li>
+				<li>Node.js</li>
+				<li>Git</li>
+			</ul>
+		</section>
+
+		<section id="contact" class="section container" aria-labelledby="contact-title">
+			<h2 id="contact-title">Contacto</h2>
+			<form class="contact-form" action="https://formspree.io/f/mgegbvkw" method="POST">
+				<label>
+					<span>Nombre</span>
+					<input type="text" name="name" required />
+				</label>
+				<label>
+					<span>Email</span>
+					<input type="email" name="email" required />
+				</label>
+				<label>
+					<span>Mensaje</span>
+					<textarea name="message" rows="5" required></textarea>
+				</label>
+				<button class="btn primary" type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Igor. Hecho con ❤</p>
+			<ul class="social">
+				<li><a href="#" aria-label="GitHub">GitHub</a></li>
+				<li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+				<li><a href="#" aria-label="Twitter">Twitter</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="/Js/script.js"></script>
+</body>
+</html>
+
