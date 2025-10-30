@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Igor Nikolaidis | Desarrollador I.T</title>
-	<meta name="description" content="Portafolio de Igor Nikolaidis - Desarrollador I.T y Gestor de Proyecto. Descubre mis proyectos y habilidades." />
+	<title>Proyectos | Igor Nikolaidis</title>
+	<meta name="description" content="Portafolio de proyectos de Igor Nikolaidis - Desarrollador I.T y Gestor de Proyecto." />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
 	<header class="site-header">
 		<div class="container header-inner">
-			<a class="brand" href="#home" aria-label="Ir al inicio">
+			<a class="brand" href="index.html#home" aria-label="Ir al inicio">
 				<svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 4h24v24H4z" fill="none"/><path d="M8 24V8h4v6h8V8h4v16h-4v-6h-8v6z" fill="currentColor"/></svg>
 				<span>Igor Nikolaidis</span>
 			</a>
@@ -23,41 +23,23 @@
 			</button>
 			<nav id="site-nav" class="site-nav" aria-label="Principal">
 				<ul>
-					<li><a href="#home">Inicio</a></li>
-					<li><a href="#about">Sobre mí</a></li>
+					<li><a href="index.html#home">Inicio</a></li>
+					<li><a href="index.html#about">Sobre mí</a></li>
 					<li><a href="curriculum.html">Currículum</a></li>
-					<li><a href="proyectos.html">Proyectos</a></li>
-					<li><a href="#skills">Habilidades</a></li>
-					<li><a href="#contact">Contacto</a></li>
+					<li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+					<li><a href="index.html#skills">Habilidades</a></li>
+					<li><a href="index.html#contact">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<main id="home">
-		<section class="hero container" aria-labelledby="hero-title">
-			<div class="hero-text">
-				<h1 id="hero-title">Hola, soy <span class="accent">Igor Nikolaidis</span>.</h1>
-				<p class="lead">Desarrollador I.T y Gestor de Proyecto creando soluciones tecnológicas innovadoras.</p>
-				<div class="hero-cta">
-					<a class="btn primary" href="proyectos.html">Ver proyectos</a>
-					<a class="btn ghost" href="#contact">Contactar</a>
-				</div>
-			</div>
-			<div class="hero-art" aria-hidden="true">
-				<img class="hero-photo" src="Media/FotoPerfil.jpg" alt="Foto de perfil de Igor Nikolaidis" />
-			</div>
-		</section>
-
-		<section id="about" class="section container" aria-labelledby="about-title">
-			<h2 id="about-title">Sobre mí</h2>
-			<p>Bienvenido a mi portafolio de programación. Aquí puedes explorar las creaciones que he desarrollado y obtener una visión de mis habilidades como desarrollador de software. Haz clic en 'Perfil' para conocer más sobre mi trayectoria y en 'Proyectos' para ver ejemplos de mis trabajos. Estoy emocionado de compartir mi historia y mi pasión por la programación contigo.
-			</p>
-		</section>
-
-		<section id="projects" class="section container" aria-labelledby="projects-title">
-			<h2 id="projects-title">Proyectos</h2>
-			<div class="grid projects-grid">
+	<main>
+		<section class="section container" aria-labelledby="proyectos-title">
+			<h1 id="proyectos-title">Mis Creaciones</h1>
+			<p style="margin-top: 16px; color: var(--text-1); font-size: 1.1rem;">¡Hola! Soy Igor, un apasionado desarrollador de software. Aquí puedes encontrar una muestra de mis trabajos más recientes. Siéntete libre de explorar y conocer más sobre mis proyectos.</p>
+			
+			<div class="grid projects-grid" style="margin-top: 32px;">
 				<article class="card">
 					<img class="card-img" src="Media/BlablaIcon.png" alt="Captura del proyecto Blablajet" loading="lazy" />
 					<h3>Proyecto 01 - Página Web Blablajet</h3>
@@ -90,42 +72,6 @@
 				</article>
 			</div>
 		</section>
-
-		<section id="skills" class="section container" aria-labelledby="skills-title">
-			<h2 id="skills-title">Habilidades</h2>
-			<ul class="skills-list">
-				<li>Gestión de Proyectos</li>
-				<li>Desarrollo Web</li>
-				<li>JavaScript</li>
-				<li>HTML5/CSS3</li>
-				<li>Node.js</li>
-				<li>Git</li>
-				<li>Metodologías Ágiles</li>
-			</ul>
-		</section>
-
-		<section id="contact" class="section container" aria-labelledby="contact-title">
-			<h2 id="contact-title">Contacto</h2>
-			<form class="contact-form" action="https://formspree.io/f/mgegbvkw" method="POST">
-				<label>
-					<span>Nombre</span>
-					<input type="text" name="name" required />
-				</label>
-				<label>
-					<span>Email</span>
-					<input type="email" name="email" required />
-				</label>
-				<label>
-					<span>Mensaje</span>
-					<textarea name="message" rows="5" required></textarea>
-				</label>
-				<button class="btn primary" type="submit">Enviar</button>
-			</form>
-			<div style="margin-top: 20px; text-align: center;">
-				<p><strong>Teléfono:</strong> <a href="tel:+34688878001" style="color: var(--accent);">+34 688 878 001</a></p>
-				<p><strong>Email:</strong> <a href="mailto:igornikolaidis@gmail.com" style="color: var(--accent);">igornikolaidis@gmail.com</a></p>
-			</div>
-		</section>
 	</main>
 
 	<footer class="site-footer">
@@ -142,4 +88,3 @@
 	<script src="Js/script.js"></script>
 </body>
 </html>
-

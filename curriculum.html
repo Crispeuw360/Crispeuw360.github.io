@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Currículum | Igor Nikolaidis</title>
+	<meta name="description" content="Experiencia laboral, educación, habilidades e idiomas de Igor Nikolaidis." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Css/styles.css" />
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html#home" aria-label="Ir al inicio">
+				<svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 4h24v24H4z" fill="none"/><path d="M8 24V8h4v6h8V8h4v16h-4v-6h-8v6z" fill="currentColor"/></svg>
+				<span>Igor Nikolaidis</span>
+			</a>
+			<button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+				<span></span><span></span><span></span>
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Principal">
+				<ul>
+					<li><a href="index.html#home">Inicio</a></li>
+					<li><a href="index.html#about">Sobre mí</a></li>
+					<li><a href="curriculum.html" aria-current="page">Currículum</a></li>
+					<li><a href="proyectos.html">Proyectos</a></li>
+					<li><a href="index.html#skills">Habilidades</a></li>
+					<li><a href="index.html#contact">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section container" aria-labelledby="exp-title">
+			<h1 id="exp-title">Experiencia Laboral</h1>
+			<h2 style="margin-top: 24px;">Proyectos Destacados</h2>
+			<div class="grid" style="margin-top: 16px;">
+				<article class="card">
+					<h3>2025 · Desarrollador Web — HodeiCloud</h3>
+					<p>Experiencia creando una página web desde cero con su propio servidor. Trabajo en equipo que fortaleció mis habilidades de desarrollo web.</p>
+					<p class="muted">Vizcaya, Barakaldo</p>
+				</article>
+				<article class="card">
+					<h3>2024 · Venta de Productos Informáticos + Técnico Auxiliar</h3>
+					<p>Atención al público y soporte técnico. Desarrollé resiliencia y trato con clientes en un entorno dinámico.</p>
+					<p class="muted">Udaberri Power Cell — Vizcaya, Getxo</p>
+				</article>
+				<article class="card">
+					<h3>2023 · Auxiliar Técnico Informático — CIF Santurtzi</h3>
+					<p>Prácticas: esquematización de redes y formateo de equipos en aula. Primer contacto profesional con la informática.</p>
+					<p class="muted">Vizcaya, Kabieces</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section container" aria-labelledby="edu-title">
+			<h2 id="edu-title">Educación</h2>
+			<div class="grid" style="margin-top: 16px;">
+				<article class="card">
+					<h3>2024–2026 · Grado Superior en DAM</h3>
+					<p>Colegio FP — Vizcaya, Erandio</p>
+					<p>Base sólida en programación y desarrollo de software. Participación en proyectos académicos aplicados a contextos reales.</p>
+				</article>
+				<article class="card">
+					<h3>2022–2024 · Grado Medio en SMR</h3>
+					<p>Colegio FP — Vizcaya, Kabieces</p>
+					<p>Fundamentos de informática y redes. Introducción a lenguajes y tecnologías web como base para la carrera profesional.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section container" aria-labelledby="skills-title">
+			<h2 id="skills-title">Habilidades Profesionales</h2>
+			<ul class="skills-list" style="margin-top: 12px;">
+				<li>Desarrollo Frontend y Backend</li>
+				<li>Diseño de Interfaces de Usuario</li>
+				<li>Gestión de Proyectos</li>
+				<li>Resolución de Problemas</li>
+				<li>Desarrollo de aplicación multiplataforma</li>
+			</ul>
+		</section>
+
+		<section class="section container" aria-labelledby="lang-title">
+			<h2 id="lang-title">Idiomas</h2>
+			<ul class="skills-list" style="margin-top: 12px;">
+				<li>Inglés (Avanzado)</li>
+				<li>Euskera (Intermedio)</li>
+				<li>Español (Nativo)</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Igor Nikolaidis. Hecho con ❤</p>
+			<ul class="social">
+				<li><a href="https://linkedin.com/in/igornikolaidis" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+				<li><a href="https://instagram.com/igornikolaidis" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
+				<li><a href="mailto:igornikolaidis@gmail.com" aria-label="Email">Email</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="Js/script.js"></script>
+</body>
+</html>
+

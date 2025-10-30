@@ -33,4 +33,3 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
 // Year in footer
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
