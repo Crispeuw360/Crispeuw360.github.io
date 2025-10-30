@@ -45,7 +45,7 @@ body {
 .hero-cta { margin-top: 20px; display: flex; gap: 12px; }
 .hero-art { position: relative; height: 280px; }
 .orb { position: absolute; inset: 0; margin: auto; width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, var(--accent-2), var(--accent)); filter: blur(12px); box-shadow: 0 0 120px rgba(35,214,140,0.28); opacity: 0.9; }
-.hero-photo { position: absolute; inset: 0; margin: auto; width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border); box-shadow: var(--shadow); background: #111; }
+.hero-photo { position: absolute; inset: 0; margin: auto; width: 240px; height: 240px; aspect-ratio: 1 / 1; display: block; border-radius: 50%; object-fit: cover; object-position: center; border: 2px solid var(--border); box-shadow: var(--shadow); background: #111; }
 
 /* Sections */
 .section { padding: 64px 0; }
@@ -62,8 +62,9 @@ body {
 /* Cards & grids */
 .grid { display: grid; gap: 20px; }
 .projects-grid { grid-template-columns: repeat(3, 1fr); }
-.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); overflow: hidden; }
 .card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; border: 1px solid var(--border); background: #111; margin-bottom: 12px; }
+.projects-grid .card img { width: 100%; height: 180px; object-fit: cover; display: block; }
 .card h3 { margin: 0 0 6px; }
 .card p { margin: 0 0 10px; color: var(--text-1); }
 .tags { display: flex; gap: 8px; list-style: none; padding: 0; margin: 12px 0; }
